@@ -1,0 +1,5 @@
+[user]
+	email = contact@filenko.ms
+	name = Max Filenko
+[commit]
+	gpgsign = true
