@@ -34,6 +34,10 @@ setopt INC_APPEND_HISTORY
 bindkey "^[[A" history-beginning-search-backward # search backward in the history
 bindkey "^[[B" history-beginning-search-forward  # search forward in the history
 
+## Key bindings
+
+bindkey "^[[3~" delete-char
+
 ## Miscellaneous
 
 setopt AUTOCD     # skip `cd` command to change CWD: simply type its name
