@@ -5,8 +5,8 @@
 
 ## Prompts
 
-PROMPT='%% '  # left prompt
-RPROMPT=' %*' # right prompt
+PROMPT="%% "  # left prompt
+RPROMPT=" %*" # right prompt
 
 ENABLE_CORRECTION="true" # command auto-correction
 
