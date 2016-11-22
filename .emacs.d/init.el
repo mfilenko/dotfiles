@@ -9,5 +9,9 @@
 (scroll-bar-mode -1) ; disable vertical scroll bar
 (menu-bar-mode -1)   ; disable menu bar
 
+; start in full screen
+(custom-set-variables
+ '(initial-frame-alist (quote ((fullscreen . fullboth)))))
+
 (setq make-backup-files nil)      ; do not back up files
 (setq tramp-default-method "ssh") ; faster than the default `scp`
