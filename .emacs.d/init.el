@@ -9,9 +9,10 @@
 (scroll-bar-mode -1) ; disable vertical scroll bar
 (menu-bar-mode -1)   ; disable menu bar
 
-; start in full screen
 (custom-set-variables
- '(initial-frame-alist (quote ((fullscreen . fullboth)))))
+ '(inhibit-startup-screen t)                              ; do not inhibit the startup screen
+ '(initial-frame-alist (quote ((fullscreen . fullboth)))) ; start in full screen
+ '(initial-scratch-message nil))                          ; display empty message in *scratch* buffer at startup
 
 (setq make-backup-files nil)      ; do not back up files
 (setq tramp-default-method "ssh") ; faster than the default `scp`
