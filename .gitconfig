@@ -3,3 +3,5 @@
 	name = Max Filenko
 [commit]
 	gpgsign = true
+[core]
+	excludesfile = ~/.gitignore
