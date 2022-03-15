@@ -10,9 +10,10 @@
 (scroll-bar-mode -1) ; disable vertical scroll bar
 (menu-bar-mode -1)   ; disable menu bar
 
+(add-to-list 'default-frame-alist '(fullscreen . maximized)) ; maximize all frames
+
 (custom-set-variables
  '(inhibit-startup-screen t)                              ; do not inhibit the startup screen
- '(initial-frame-alist (quote ((fullscreen . fullboth)))) ; start in full screen
  '(initial-scratch-message nil))                          ; display empty message in *scratch* buffer at startup
 
 (setq make-backup-files nil)      ; do not back up files
