@@ -1,4 +1,4 @@
-.PHONY: install npm kitty mac emacs-mac sandwich
+.PHONY: install npm kitty mac homebrew emacs-mac sandwich
 
 install: npm
 
@@ -9,7 +9,10 @@ kitty:
 	brew install --cask kitty
 
 mac:
-	kitty emacs-mac
+	homebrew kitty emacs-mac
+
+homebrew:
+	curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh | ruby
 
 emacs-mac:
 	brew tap railwaycat/emacsmacport
