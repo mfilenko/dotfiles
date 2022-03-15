@@ -1,12 +1,15 @@
-.PHONY: install npm mac emacs-mac sandwich
+.PHONY: install npm kitty mac emacs-mac sandwich
 
 install: npm
 
 npm:
 	npm config set sign-git-tag true
 
+kitty:
+	brew install --cask kitty
+
 mac:
-	emacs-mac
+	kitty emacs-mac
 
 emacs-mac:
 	brew tap railwaycat/emacsmacport
