@@ -12,9 +12,15 @@
 
 (add-to-list 'default-frame-alist '(fullscreen . maximized)) ; maximize all frames
 
+(add-to-list 'default-frame-alist '(ns-transparent-titlebar . t))
+(add-to-list 'default-frame-alist '(ns-appearance . light))
+
 (custom-set-variables
  '(inhibit-startup-screen t)                              ; do not inhibit the startup screen
  '(initial-scratch-message nil))                          ; display empty message in *scratch* buffer at startup
+
+(setq ns-use-proxy-icon nil)
+(setq frame-title-format nil)
 
 (setq make-backup-files nil)      ; do not back up files
 (setq tramp-default-method "ssh") ; faster than the default `scp`
